@@ -1,0 +1,113 @@
+Copy* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+#deposit-container, 
+#withdraw-container, 
+#transfer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.deposit-form {
+    background-color: #1e293b;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid #3b82f6;
+}
+
+.deposit-form h2 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #3b4252;
+    background-color: #2e3440;
+    color: white;
+    font-size: 16px;
+}
+
+.quick-amounts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.quick-amount {
+    flex-basis: 48%;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #3b4252;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quick-amount:hover {
+    background-color: #4c566a;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group button {
+    flex-basis: 48%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#deposit-btn, #withdraw-btn, #transfer-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#cancel-btn, #cancel-withdraw-btn, #cancel-transfer-btn {
+    background-color: #d33;
+    color: white;
+}
+
+#deposit-btn:hover, #withdraw-btn:hover, #transfer-btn:hover {
+    background-color: #3e8e41;
+}
+
+#cancel-btn:hover, #cancel-withdraw-btn:hover, #cancel-transfer-btn:hover {
+    background-color: #c62828;
+}

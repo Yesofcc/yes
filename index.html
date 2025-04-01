@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankov˝ systÈm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hlavn˝ kontajner pre vkladov˝ formul·r -->
+    <div id="deposit-container">
+        <div class="deposit-form">
+            <h2>Vklad peÚazÌ</h2>
+            <div class="input-group">
+                <input type="number" id="deposit-amount" placeholder="Suma na vloûenie" min="1">
+            </div>
+            <div class="quick-amounts">
+                <button class="quick-amount" data-amount="100">100$</button>
+                <button class="quick-amount" data-amount="500">500$</button>
+                <button class="quick-amount" data-amount="1000">1000$</button>
+                <button class="quick-amount" data-amount="all">Vöetko</button>
+            </div>
+            <div class="button-group">
+                <button id="deposit-btn">Vloûiù</button>
+                <button id="cancel-btn">Zruöiù</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontajner pre v˝berov˝ formul·r (skryt˝ by default) -->
+    <div id="withdraw-container" style="display: none;">
+        <div class="deposit-form">
+            <h2>V˝ber peÚazÌ</h2>
+            <div class="input-group">
+                <input type="number" id="withdraw-amount" placeholder="Suma na v˝ber" min="1">
+            </div>
+            <div class="quick-amounts">
+                <button class="quick-amount" data-amount="100">100$</button>
+                <button class="quick-amount" data-amount="500">500$</button>
+                <button class="quick-amount" data-amount="1000">1000$</button>
+                <button class="quick-amount" data-amount="all">Vöetko</button>
+            </div>
+            <div class="button-group">
+                <button id="withdraw-btn">Vybraù</button>
+                <button id="cancel-withdraw-btn">Zruöiù</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontajner pre transfer peÚazÌ (skryt˝ by default) -->
+    <div id="transfer-container" style="display: none;">
+        <div class="deposit-form">
+            <h2>Poslaù peniaze</h2>
+            <div class="input-group">
+                <input type="text" id="transfer-id" placeholder="ID hr·Ëa">
+            </div>
+            <div class="input-group">
+                <input type="number" id="transfer-amount" placeholder="Suma na poslanie" min="1">
+            </div>
+            <div class="button-group">
+                <button id="transfer-btn">Poslaù</button>
+                <button id="cancel-transfer-btn">Zruöiù</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
